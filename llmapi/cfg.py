@@ -1,0 +1,9 @@
+import os
+
+YAGPT_CATALOG = os.getenv("YAGPT_CATALOG")
+YAGPT_KEY = os.getenv("YAGPT_KEY")
+
+MAINAPI_HOST = os.getenv("MAINAPI_HOST", "127.0.0.1:8080")
+MODERATION_HOST = os.getenv("MODERATION_HOST", "127.0.0.1:8001")
+GRAFANA_API_HOST = os.getenv("GRAFANA_API_HOST", "127.0.0.1:8002")
+LLM_API_HOST = os.getenv("LLM_API_HOST", "127.0.0.1:8003")

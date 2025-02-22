@@ -1,0 +1,38 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+      - "8001:8001"
+      - "8002:8002"
+      - "8003:8003"
+    depends_on:
+      - redis
+      - postgres
+  redis:
+    image: "redis:alpine"
+    command: --port 6380
+    ports:
+      - "6380:6380"
+    expose:
+      - "6380"
+    container_name: redis
+  postgres:
+    image: postgres
+    command: -p 5433
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: 123
+    ports:
+      - "5433:5433"
+    expose:
+      - "5433"
+    container_name: postgres
+  grafana:
+    image: grafana/grafana
+    environment:
+      GF_SERVER_HTTP_PORT: 3001
+    ports:
+      - "3001:3001"
+    expose:
+      - "3001"

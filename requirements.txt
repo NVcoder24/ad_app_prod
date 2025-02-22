@@ -1,0 +1,7 @@
+aiogram
+asyncio
+http3
+psycopg2-binary
+fastapi[standard]
+uvicorn
+redis
