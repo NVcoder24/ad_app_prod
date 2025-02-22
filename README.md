@@ -68,7 +68,7 @@ advertiserId, то возвращается не 403 или 400, а 404 (объ�
 
 Пример использования из postman:
 
-![alt text](https://gitlab.prodcontest.ru/2025-final-projects-back/NVcoder24/-/raw/master/solution/readme_resources/Screenshot_4389.png)
+![alt text](https://github.com/NVcoder24/ad_app_prod/blob/main/readme_resources/Screenshot_4389.png)
 
 Принимает следующие типы изображений: png,jpg,jpeg,tiff,gif,webp,bmp (меняются через переменную среды `IMAGES_FILETYPES`)
 
@@ -87,13 +87,13 @@ advertiserId, то возвращается не 403 или 400, а 404 (объ�
 датасорс `simpod-json-datasource`). Готовый JSON дашборда:
 `solution/Статистика рекламодателя-1740145250823.json`:
 
-![alt text](https://gitlab.prodcontest.ru/2025-final-projects-back/NVcoder24/-/raw/master/solution/readme_resources/Screenshot_4396.png)
+![alt text](https://github.com/NVcoder24/ad_app_prod/blob/main/readme_resources/Screenshot_4396.png)
 
 ### ❗️❗️❗️ Важности
 Если вы используете графану из `Dockerfile`, то она работает на 3001 порте,
 в параметрах датасорса нужно указать URL `web:8002`:
 
-![alt text](https://gitlab.prodcontest.ru/2025-final-projects-back/NVcoder24/-/raw/master/solution/readme_resources/Screenshot_4397.png)
+![alt text](https://github.com/NVcoder24/ad_app_prod/blob/main/readme_resources/Screenshot_4397.png)
 
 ## Интеграция с TG ботом
 ### ✔️ Описание
@@ -258,9 +258,9 @@ Docker compose up: https://rutube.ru/video/private/c376af212866ff25550abbc0d9d8e
 
 # Схема данных СУБД
 ### БД - Главное API
-![alt text](https://gitlab.prodcontest.ru/2025-final-projects-back/NVcoder24/-/raw/master/solution/readme_resources/prod2_1.png)
+![alt text](https://github.com/NVcoder24/ad_app_prod/blob/main/readme_resources/prod2_1.png)
 ### БД - API модерации
-![alt text](https://gitlab.prodcontest.ru/2025-final-projects-back/NVcoder24/-/raw/master/solution/readme_resources/prod2_mod_1.png)
+![alt text](https://github.com/NVcoder24/ad_app_prod/blob/main/readme_resources/prod2_mod_1.png)
 № | Название сервиса | Часть сервиса | Файл | Внешний адрес (при запуске из `Dockerfile`)
 --- | --- | --- | --- | ---
 1 | Main API | FastAPI app |  `solution/mainapi/main.py` | `localhost:8080`
@@ -275,7 +275,7 @@ Docker compose up: https://rutube.ru/video/private/c376af212866ff25550abbc0d9d8e
 
 # Описание работы основных точек входа
 ### Диаграма - архитектура приложения
-![alt text](https://gitlab.prodcontest.ru/2025-final-projects-back/NVcoder24/-/raw/master/solution/readme_resources/architecture.png)
+![alt text](https://github.com/NVcoder24/ad_app_prod/blob/main/readme_resources/architecture.png)
 
 ### Описание работы алгоритма
 Весь алгоритм - один большой запрос SQL.
